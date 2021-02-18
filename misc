@@ -1,0 +1,28 @@
+top programming fonts
+menlo 16
+
+do not maximize windows:
+dconf - org -gnome - mutter
+
+time on right:
+frippery clock move
+
+curl -L https://github.com/hbin/top-programming-fonts/raw/master/install.sh | bash
+
+hex palette:
+#000000
+#CC0000
+#4E9A06
+#C4A006
+#3465A4
+#75507B
+#06989A
+#D3D7CF
+#555753
+#EF2929
+#8AE234
+#FCE94F
+#729FCF
+#AD7FA8
+#34E2E2
+#EEEEEC
