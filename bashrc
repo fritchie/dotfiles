@@ -136,7 +136,7 @@ alias whichpy='env | grep VIRTUAL_ENV'
 alias k='kubectl'
 alias ks='kubectl -n kube-system'
 alias kr='kubectl -n rook-ceph'
-alias kubeme='source ~/ksansible/bin/activate && ansible-playbook -i ~/ksinv/inventory.ini -e "helm_enabled=True" -e "cert_manager_enabled=True" -e "ingress_nginx_enabled" -e "calico_ipip_mode=Never" -e "registry_enabled=True" -b -v cluster.yml'
+alias kubeme='source ~/ksansible/bin/activate && ansible-playbook -i ~/ksinv/inventory.ini -e "helm_enabled=True" -e "cert_manager_enabled=True" -e "ingress_nginx_enabled=True" -e "calico_ipip_mode=Never" -e "registry_enabled=True" -b -v cluster.yml'
 alias cgo="cargo"
 
 ########
