@@ -143,7 +143,7 @@ alias cgo="cargo"
 # PATH #
 ########
 
-export PATH="/bin:/sbin:/usr/bin:/usr/sbin:$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/go/bin:/usr/local/go/bin:$HOME/.cargo/bin:$HOME/zig-linux:/snap/bin:"
+export PATH="/bin:/sbin:/usr/bin:/usr/sbin:$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/go/bin:/usr/local/go/bin:/usr/share/bcc/tools:$HOME/.cargo/bin:/snap/bin:"
 
 MANPATH="$MANPATH:/usr/share/bcc/man:/usr/local/share/bpftrace/tools"
 export MANPATH
