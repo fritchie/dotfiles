@@ -4,24 +4,6 @@
 
 . ~/.git-prompt.sh
 
-# palette
-# 0  black          #000000 fg 30 bg 40
-# 1  red            #CC0000 fg 31 bg 41
-# 2  green          #4E9A06 fg 32 bg 42
-# 3  yellow         #C4A006 fg 33 bg 43
-# 4  blue           #3465A4 fg 34 bg 44
-# 5  magenta        #75507B fg 35 bg 45
-# 6  cyan           #06989A fg 36 bg 46 
-# 7  white          #D3D7CF fg 37 bg 47
-# 8  black bright   #555753 fg 90 bg 100
-# 9  red bright     #EF2929 fg 91 bg 101
-# 10 green bright   #8AE234 fg 92 bg 102
-# 11 yellow bright  #FCE94F fg 93 bg 103
-# 12 blue bright    #729FCF fg 94 bg 104
-# 13 magenta bright #AD7FA8 fg 95 bg 105
-# 14 cyan bright    #34E2E2 fg 96 bg 106
-# 15 white bright   #EEEEEC fg 97 bg 107
-
 # 256 Color fg
 # \e [ 38 ; 5 ; color m
 # 256 Color bg
@@ -62,6 +44,24 @@ export PROMPT_COMMAND=prompt_command
 # LS_COLORS #
 #############
 
+# palette
+# 0  black          #000000 fg 30 bg 40
+# 1  red            #CC0000 fg 31 bg 41
+# 2  green          #4E9A06 fg 32 bg 42
+# 3  yellow         #C4A006 fg 33 bg 43
+# 4  blue           #3465A4 fg 34 bg 44
+# 5  magenta        #75507B fg 35 bg 45
+# 6  cyan           #06989A fg 36 bg 46 
+# 7  white          #D3D7CF fg 37 bg 47
+# 8  black bright   #555753 fg 90 bg 100
+# 9  red bright     #EF2929 fg 91 bg 101
+# 10 green bright   #8AE234 fg 92 bg 102
+# 11 yellow bright  #FCE94F fg 93 bg 103
+# 12 blue bright    #729FCF fg 94 bg 104
+# 13 magenta bright #AD7FA8 fg 95 bg 105
+# 14 cyan bright    #34E2E2 fg 96 bg 106
+# 15 white bright   #EEEEEC fg 97 bg 107
+
 # di = directory
 # fi = file
 # ln = symbolic link
@@ -73,11 +73,16 @@ export PROMPT_COMMAND=prompt_command
 # mi = non-existent file pointed to by a symbolic link (visible when you type ls -l)
 # ex = file which is executable (ie. has 'x' set in permissions).
 
-# 0   = default colour
+# 0   = default colour (reset)
 # 1   = bold
-# 4   = underlined
-# 5   = flashing text
-# 7   = reverse field
+# 2   = faint
+# 3   = italic
+# 4   = underline
+# 5   = slow blink
+# 6   = fast blink
+# 7   = reverse video
+# 8   = erase
+# 9   = strikethrough
 
 LS_COLORS='no=00;32:fi=00:di=00;33:ln=04;36:pi=40;33:so=01;35:cd=32:bd=40;33;01:ex=00;32:mi=05;41:'
 export LS_COLORS
