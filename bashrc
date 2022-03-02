@@ -4,13 +4,13 @@
 
 . ~/.git-prompt.sh
 
-# 8 Bit Colors
+# 8 Colors
 # black="\[\e[0;30m\]"
 # red="\[\e[0;31m\]"
 # green="\[\e[0;32m\]"
 # blue="\[\e[0;34m\]"
 
-# 256 Bit Colors
+# 256 Colors
 black="\[\e[38;5;0m\]"
 red="\[\e[38;5;1m\]"
 green="\[\e[38;5;2m\]"
