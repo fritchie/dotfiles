@@ -22,6 +22,15 @@
 # 14 cyan bright    #34E2E2 fg 96 bg 106
 # 15 white bright   #EEEEEC fg 97 bg 107
 
+# 256 Color fg
+# \e [ 38 ; 5 ; color m
+# 256 Color bg
+# \e [ 48 ; 5 ; color m
+# Truecolor fg
+# \e [ 38 ; 2 ; R ; G ; B ; m
+# Truecolor bg
+# \e [ 48 ; 2 ; R ; G ; B ; m
+
 # 256 Colors
 black="\[\e[38;5;0m\]"
 red="\[\e[38;5;1m\]"
@@ -69,35 +78,6 @@ export PROMPT_COMMAND=prompt_command
 # 4   = underlined
 # 5   = flashing text
 # 7   = reverse field
-# 31  = red
-# 32  = green
-# 33  = orange
-# 34  = blue
-# 35  = purple
-# 36  = cyan
-# 37  = grey
-# 40  = black background
-# 41  = red background
-# 42  = green background
-# 43  = orange background
-# 44  = blue background
-# 45  = purple background
-# 46  = cyan background
-# 47  = grey background
-# 90  = dark grey
-# 91  = light red
-# 92  = light green
-# 93  = yellow
-# 94  = light blue
-# 95  = light purple
-# 96  = turquoise
-# 100 = dark grey background
-# 101 = light red background
-# 102 = light green background
-# 103 = yellow background
-# 104 = light blue background
-# 105 = light purple background
-# 106 = turquoise background
 
 LS_COLORS='no=00;32:fi=00:di=00;33:ln=04;36:pi=40;33:so=01;35:cd=32:bd=40;33;01:ex=00;32:mi=05;41:'
 export LS_COLORS
@@ -148,17 +128,19 @@ alias whichpy='env | grep VIRTUAL_ENV'
 alias k='kubectl'
 alias ks='kubectl -n kube-system'
 alias kr='kubectl -n rook-ceph'
-alias kubeme='source ~/ksansible/bin/activate && ansible-playbook -i ~/ksinv/inventory.ini -e "helm_enabled=True" -e "cert_manager_enabled=False" -e "ingress_nginx_enabled=True" -e "ingress_nginx_host_network=True" -e "kube_network_plugin=cilium" -e "cilium_enable_prometheus=true" -e "cilium_enable_hubble=true" -e "cilium_kube_proxy_replacement=strict" -e "cilium_tunnel_mode=disabled" -e "cilium_auto_direct_node_routes=True" -e "cilium_version=v1.9.5" -e "cilium_native_routing_cidr=10.233.0.0/17" -e "registry_enabled=True" -b -v cluster.yml'
-alias cgo="cargo"
+#alias kubeme="source ~/ksansible/bin/activate && ansible-playbook -i inventory/inventory.ini -b -v cluster.yml"
+alias kubeme='source ~/ksansible/bin/activate && ansible-playbook -i ~/ksinv/inventory.ini -e "helm_enabled=True" -e "cert_manager_enabled=False" -e "ingress_nginx_enabled=True" -e "ingress_nginx_host_network=True" -e "calico_ipip_mode=Never" -e "calico_endpoint_to_host_action=ACCEPT" -e "registry_enabled=True" -b -v cluster.yml'
+#alias kubeme='source ~/ksansible3/bin/activate && ansible-playbook -i ~/ksinv/inventory.ini -e "helm_enabled=True" -e "cert_manager_enabled=False" -e "ingress_nginx_enabled=True" -e "ingress_nginx_host_network=True" -e "kube_network_plugin=cilium" -e "cilium_enable_prometheus=true" -e "cilium_enable_hubble=true" -e "cilium_hubble_install=true" -e "cilium_hubble_tls_generate=true" -e "cilium_kube_proxy_replacement=strict" -e "cilium_tunnel_mode=disabled" -e "cilium_auto_direct_node_routes=True" -e "cilium_version=v1.10.3" -e "cilium_native_routing_cidr=10.233.0.0/17" -e "registry_enabled=True" -b -v cluster.yml'
 
 ########
 # PATH #
 ########
 
-export PATH="/bin:/sbin:/usr/bin:/usr/sbin:$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/go/bin:/usr/local/go/bin:/usr/share/bcc/tools:$HOME/.cargo/bin:/snap/bin:"
+export GOPATH=$HOME/go
 
-MANPATH="$MANPATH:/usr/share/bcc/man:/usr/local/share/bpftrace/tools"
-export MANPATH
+export PATH="/bin:/sbin:/usr/bin:/usr/sbin:$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/go/bin:/usr/local/go/bin:$HOME/.cargo/bin:/usr/share/bcc/tools:"
+
+export MANPATH="$MANPATH:/usr/share/bcc/man"
 
 ########
 # MISC #
@@ -175,10 +157,6 @@ if [ -t 1 ]; then
     bind 'set menu-complete-display-prefix on'
     bind 'TAB:menu-complete'
 fi
-
-function eh {
-    sed -i $1d $HOME/.ssh/known_hosts
-}
 
 function color256 {
     for fgbg in 38 48 ; do #Foreground/Background
