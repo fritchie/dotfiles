@@ -45,22 +45,22 @@ export PROMPT_COMMAND=prompt_command
 #############
 
 # palette
-# 0  black          #000000 fg 30 bg 40
-# 1  red            #CC0000 fg 31 bg 41
-# 2  green          #4E9A06 fg 32 bg 42
-# 3  yellow         #C4A006 fg 33 bg 43
-# 4  blue           #3465A4 fg 34 bg 44
-# 5  magenta        #75507B fg 35 bg 45
-# 6  cyan           #06989A fg 36 bg 46
-# 7  white          #D3D7CF fg 37 bg 47
-# 8  black bright   #555753 fg 90 bg 100
-# 9  red bright     #EF2929 fg 91 bg 101
-# 10 green bright   #8AE234 fg 92 bg 102
-# 11 yellow bright  #FCE94F fg 93 bg 103
-# 12 blue bright    #729FCF fg 94 bg 104
-# 13 magenta bright #AD7FA8 fg 95 bg 105
-# 14 cyan bright    #34E2E2 fg 96 bg 106
-# 15 white bright   #EEEEEC fg 97 bg 107
+# 0  black          #000000 fg 30 bg 40  0;0;0
+# 1  red            #CC0000 fg 31 bg 41  204;0;0
+# 2  green          #4E9A06 fg 32 bg 42  78;154;6
+# 3  yellow         #C4A006 fg 33 bg 43  196;160;6
+# 4  blue           #3465A4 fg 34 bg 44  52;101;164
+# 5  magenta        #75507B fg 35 bg 45  117;80;123
+# 6  cyan           #06989A fg 36 bg 46  6;152;154
+# 7  white          #D3D7CF fg 37 bg 47  211;215;207
+# 8  black bright   #555753 fg 90 bg 100 85;87;83
+# 9  red bright     #EF2929 fg 91 bg 101 239;41;41
+# 10 green bright   #8AE234 fg 92 bg 102 138;226;52
+# 11 yellow bright  #FCE94F fg 93 bg 103 252;233;79
+# 12 blue bright    #729FCF fg 94 bg 104 114;159;207
+# 13 magenta bright #AD7FA8 fg 95 bg 105 173;127;168
+# 14 cyan bright    #34E2E2 fg 96 bg 106 52;226;226
+# 15 white bright   #EEEEEC fg 97 bg 107 238;238;236
 
 # no = normal (default)
 # di = directory
