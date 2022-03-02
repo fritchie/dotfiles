@@ -73,7 +73,7 @@ export PROMPT_COMMAND=prompt_command
 # mi = non-existent file pointed to by a symbolic link (visible when you type ls -l)
 # ex = file which is executable (ie. has 'x' set in permissions).
 
-# 0 = default colour (reset)
+# 0 = default color (reset)
 # 1 = bold
 # 2 = faint
 # 3 = italic
@@ -142,9 +142,7 @@ alias kubeme='source ~/ksansible/bin/activate && ansible-playbook -i ~/ksinv/inv
 ########
 
 export GOPATH=$HOME/go
-
 export PATH="/bin:/sbin:/usr/bin:/usr/sbin:$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/go/bin:/usr/local/go/bin:$HOME/.cargo/bin:/usr/share/bcc/tools:"
-
 export MANPATH="$MANPATH:/usr/share/bcc/man"
 
 ########
