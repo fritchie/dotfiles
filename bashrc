@@ -51,7 +51,7 @@ export PROMPT_COMMAND=prompt_command
 # 3  yellow         #C4A006 fg 33 bg 43
 # 4  blue           #3465A4 fg 34 bg 44
 # 5  magenta        #75507B fg 35 bg 45
-# 6  cyan           #06989A fg 36 bg 46 
+# 6  cyan           #06989A fg 36 bg 46
 # 7  white          #D3D7CF fg 37 bg 47
 # 8  black bright   #555753 fg 90 bg 100
 # 9  red bright     #EF2929 fg 91 bg 101
