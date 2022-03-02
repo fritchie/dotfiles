@@ -73,16 +73,16 @@ export PROMPT_COMMAND=prompt_command
 # mi = non-existent file pointed to by a symbolic link (visible when you type ls -l)
 # ex = file which is executable (ie. has 'x' set in permissions).
 
-# 0   = default colour (reset)
-# 1   = bold
-# 2   = faint
-# 3   = italic
-# 4   = underline
-# 5   = slow blink
-# 6   = fast blink
-# 7   = reverse video
-# 8   = erase
-# 9   = strikethrough
+# 0 = default colour (reset)
+# 1 = bold
+# 2 = faint
+# 3 = italic
+# 4 = underline
+# 5 = slow blink
+# 6 = fast blink
+# 7 = reverse video
+# 8 = erase
+# 9 = strikethrough
 
 LS_COLORS='no=00;32:fi=00:di=00;33:ln=04;36:pi=40;33:so=01;35:cd=32:bd=40;33;01:ex=00;32:mi=05;41:'
 export LS_COLORS
