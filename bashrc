@@ -62,6 +62,7 @@ export PROMPT_COMMAND=prompt_command
 # 14 cyan bright    #34E2E2 fg 96 bg 106
 # 15 white bright   #EEEEEC fg 97 bg 107
 
+# no = normal (default)
 # di = directory
 # fi = file
 # ln = symbolic link
@@ -71,7 +72,13 @@ export PROMPT_COMMAND=prompt_command
 # cd = character (unbuffered) special file
 # or = symbolic link pointing to a non-existent file (orphan)
 # mi = non-existent file pointed to by a symbolic link (visible when you type ls -l)
-# ex = file which is executable (ie. has 'x' set in permissions).
+# ex = file which is executable (ie. has 'x' set in permissions)
+# su = setuid
+# sg = setgid
+# tw = sticky dir + other writable
+# ow = other writable
+# st = sticky
+# *.extension = file extension
 
 # 0 = default color (reset)
 # 1 = bold
@@ -80,7 +87,7 @@ export PROMPT_COMMAND=prompt_command
 # 4 = underline
 # 5 = slow blink
 # 6 = fast blink
-# 7 = reverse video
+# 7 = reversed
 # 8 = erase
 # 9 = strikethrough
 
