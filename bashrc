@@ -5,22 +5,22 @@
 . ~/.git-prompt.sh
 
 # palette
-# 0  black         #000000
-# 1  red           #CC0000
-# 2  green         #4E9A06
-# 3  yellow        #C4A006
-# 4  blue          #3465A4
-# 5  purple        #75507B
-# 6  cyan          #06989A
-# 7  white         #D3D7CF
-# 8  black bright  #555753
-# 9  red bright    #EF2929
-# 10 green bright  #8AE234
-# 11 yellow bright #FCE94F
-# 12 blue bright   #729FCF
-# 13 purple bright #AD7FA8
-# 14 cyan bright   #34E2E2
-# 15 white bright  #EEEEEC
+# 0  black          #000000
+# 1  red            #CC0000
+# 2  green          #4E9A06
+# 3  yellow         #C4A006
+# 4  blue           #3465A4
+# 5  magenta        #75507B
+# 6  cyan           #06989A
+# 7  white          #D3D7CF
+# 8  black bright   #555753
+# 9  red bright     #EF2929
+# 10 green bright   #8AE234
+# 11 yellow bright  #FCE94F
+# 12 blue bright    #729FCF
+# 13 magenta bright #AD7FA8
+# 14 cyan bright    #34E2E2
+# 15 white bright   #EEEEEC
 
 # 256 Colors
 black="\[\e[38;5;0m\]"
