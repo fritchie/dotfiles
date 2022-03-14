@@ -21,6 +21,7 @@ set autoread                   " Reload files changed outside vim
 set hidden                     " Buffers in background
 set pastetoggle=<F2>           " F2 for paste mode
 nmap <F3> :set invnumber<CR>   " F3 toggle line numbers
+inoremap jk <ESC>              " jk = <ESC>
 syntax on                      " Syntax highlighting
 let python_highlight_all = 1
 let g:rustfmt_autosave = 1     " rustfmt on save
