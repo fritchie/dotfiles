@@ -26,3 +26,5 @@ hex palette:
 #AD7FA8
 #34E2E2
 #EEEEEC
+
+gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
