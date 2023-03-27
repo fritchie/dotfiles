@@ -168,8 +168,7 @@ alias kubeme='source ~/ksansible/bin/activate && ansible-playbook -i ~/ksinv/inv
 ########
 
 export GOPATH=$HOME/go
-export PATH="/bin:/sbin:/usr/bin:/usr/sbin:$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/go/bin:/usr/local/go/bin:$HOME/.cargo/bin:/usr/share/bcc/tools:"
-export MANPATH="$MANPATH:/usr/share/bcc/man"
+export PATH="/bin:/sbin:/usr/bin:/usr/sbin:$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/go/bin:/usr/local/go/bin:$HOME/.cargo/bin:"
 
 ########
 # MISC #
