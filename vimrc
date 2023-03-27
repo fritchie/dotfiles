@@ -25,7 +25,6 @@ inoremap jk <ESC>              " jk = <ESC>
 syntax on                      " Syntax highlighting
 let python_highlight_all = 1
 let g:rustfmt_autosave = 1     " rustfmt on save
-let g:zig_fmt_autosave = 1     " fmt on save
 
 " ========== No Swap Files ==========
 
