@@ -38,10 +38,10 @@ set autoindent        " Automatically indent
 set smartindent       " Be smart when indenting
 set cindent           " Stricter rules for C
 set smarttab          " Be smart when using tabs
-set shiftwidth=8      " Spaces per indent
-set softtabstop=8     " Spaces per tab when editing
-set tabstop=8         " Spaces per tab
-set noexpandtab       " Tabs equal spaces
+set shiftwidth=4      " Spaces per indent
+set softtabstop=4     " Spaces per tab when editing
+set tabstop=4         " Spaces per tab
+set expandtab         " Tabs equal spaces
 set textwidth=0       " Don't wrap lines (insert)
 set nowrap            " Don't wrap lines (view)
 set linebreak         " Wrap lines at convenient points
