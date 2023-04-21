@@ -45,6 +45,8 @@ set expandtab         " Tabs equal spaces
 set textwidth=0       " Don't wrap lines (insert)
 set nowrap            " Don't wrap lines (view)
 set linebreak         " Wrap lines at convenient points
+set cinkeys-=0#       " no unindent # for c
+set indentkeys-=0#    " no unindent #
 
 filetype plugin on    " Enable filetype plugin
 filetype indent on    " load filetype specific indent files
